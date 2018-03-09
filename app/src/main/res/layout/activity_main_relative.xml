@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nader.helloworld4gl.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBody"
+        android:src="@drawable/body"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgHead"
+        android:src="@drawable/head"
+        android:layout_above="@id/imgBody"
+        android:layout_alignRight="@id/imgBody"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgHandLeft"
+        android:layout_toLeftOf="@id/imgBody"
+        android:src="@drawable/hand"
+        android:layout_alignTop="@id/imgBody"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgHandRight"
+        android:layout_toRightOf="@id/imgBody"
+        android:src="@drawable/hand"
+        android:layout_alignTop="@id/imgBody"
+        />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@id/imgBody"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLegLeft"
+        android:src="@drawable/leg"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLegRight"
+        android:src="@drawable/leg"
+        android:layout_toRightOf="@id/imgLegLeft"
+        android:layout_marginLeft="30dp"
+
+
+        />
+
+</RelativeLayout>
+
+
+</RelativeLayout>

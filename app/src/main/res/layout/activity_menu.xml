@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.nader.helloworld4gl.MenuActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+android:layout_marginRight="1dp"
+            android:background="@drawable/djerba"
+            android:id="@+id/Djerba">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="10dp"
+                android:alpha="1"
+                android:background="#5500aaff"
+                android:padding="3dp"
+                android:text="Djerba"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/gabes"
+            android:id="@+id/Gabes">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#990077ff"
+                android:text="Gabes"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/tozeur"
+        android:id="@+id/Tozeur"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tozeur"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textSize="24dp"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:background="#ccFFFF70"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+android:layout_marginRight="1dp"
+            android:background="@drawable/kebili"
+            android:id="@+id/kebili">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_marginBottom="10dp"
+                android:alpha="1"
+                android:background="#55100f9f"
+                android:padding="3dp"
+                android:text="Kebili"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/gafsa"
+            android:id="@+id/gafsa">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#77ff0000"
+                android:text="Gafsa"
+                android:textColor="#fff"
+                android:layout_marginBottom="10dp"
+                android:padding="3dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
