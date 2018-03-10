@@ -1,4 +1,4 @@
-package com.nader.helloworld4gl;
+package com.fksontini.HelloWorld4Gl;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.nader.helloworld4gl", appContext.getPackageName());
+        assertEquals("com.fksontini.HelloWorld4Gl", appContext.getPackageName());
     }
 }

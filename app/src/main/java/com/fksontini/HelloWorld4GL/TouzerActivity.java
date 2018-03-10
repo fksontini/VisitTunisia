@@ -1,4 +1,4 @@
-package com.nader.helloworld4gl.Activity;
+package com.fksontini.HelloWorld4GL;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.nader.helloworld4gl.R;
 
-import static com.nader.helloworld4gl.R.drawable.hotel_selected;
+
+import static com.fksontini.HelloWorld4GL.R.drawable.hotel_selected;
 
 public class TouzerActivity extends AppCompatActivity {
 

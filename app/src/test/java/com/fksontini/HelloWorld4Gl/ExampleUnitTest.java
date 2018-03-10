@@ -1,4 +1,4 @@
-package com.nader.helloworld4gl;
+package com.fksontini.HelloWorld4GL;
 
 import org.junit.Test;
 

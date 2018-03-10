@@ -1,4 +1,4 @@
-package com.nader.helloworld4gl.Activity;
+package com.fksontini.HelloWorld4GL;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import com.nader.helloworld4gl.R;
+import com.fksontini.HelloWorld4GL.R;
+
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -25,7 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         gabes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(MenuActivity.this,TouzerActivity.class);
+                Intent i= new Intent(MenuActivity.this, com.fksontini.HelloWorld4GL.TouzerActivity.class);
                 startActivity(i);
             }
         });
@@ -33,7 +34,7 @@ public class MenuActivity extends AppCompatActivity {
         kebili.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(MenuActivity.this,TouzerActivity.class);
+                Intent i= new Intent(MenuActivity.this, com.fksontini.HelloWorld4GL.TouzerActivity.class);
                 startActivity(i);
             }
         });
@@ -41,7 +42,7 @@ public class MenuActivity extends AppCompatActivity {
         touzer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(MenuActivity.this,TouzerActivity.class);
+                Intent i= new Intent(MenuActivity.this, com.fksontini.HelloWorld4GL.TouzerActivity.class);
                 startActivity(i);
             }
         });
@@ -49,7 +50,7 @@ public class MenuActivity extends AppCompatActivity {
         djerba.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent i= new Intent(MenuActivity.this,TouzerActivity.class);
+            Intent i= new Intent(MenuActivity.this, com.fksontini.HelloWorld4GL.TouzerActivity.class);
             startActivity(i);
         }
     });
