@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.nader.helloworld4gl">
+    package="com.fksontini.HelloWorld4GL">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".MainActivity"
             android:theme="@style/AppThemeNoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,8 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.MenuActivity" />
-        <activity android:name=".Activity.TouzerActivity"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".TouzerActivity" />
     </application>
 
 </manifest>

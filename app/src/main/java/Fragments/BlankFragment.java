@@ -1,4 +1,4 @@
-package Fragments;
+package com.fksontini.HelloWorld4GL;
 
 
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.nader.helloworld4gl.R;
+import com.fksontini.HelloWorld4GL.R;
 
 /**
  * A simple {@link Fragment} subclass.
