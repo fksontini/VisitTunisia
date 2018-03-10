@@ -1,10 +1,15 @@
 package com.fksontini.HelloWorld4GL;
 
+
 import android.graphics.drawable.Drawable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,9 +19,10 @@ import static com.fksontini.HelloWorld4GL.R.drawable.hotel_selected;
 
 public class TouzerActivity extends AppCompatActivity {
 
-
+android.support.v4.app.Fragment fragment;
 ImageView imgHotel,imgRestaurant,imgMonument;
 TextView txtView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +31,7 @@ TextView txtView;
          imgRestaurant = findViewById(R.id.imgRestaurant);
          imgMonument = findViewById(R.id.imgMonument);
          txtView=findViewById(R.id.txtView);
+
     }
 
     @Override
@@ -37,6 +44,16 @@ TextView txtView;
                 imgRestaurant.setBackground(getResources().getDrawable(R.drawable.restaurant));
                 imgMonument.setBackground(getResources().getDrawable(R.drawable.monument));
 txtView.setText("Hotel");
+
+                FragmentManager fm = getSupportFragmentManager();
+
+                fragment = fm.findFragmentByTag("hotel");
+                if (fragment == null) {
+                    FragmentTransaction ft = fm.beginTransaction();
+                    fragment =new Fragment();
+                    ft.add(android.R.id.content,fragment,"hotel");
+                    ft.commit();
+                }
             }
         });
         imgMonument.setOnClickListener(new View.OnClickListener() {
