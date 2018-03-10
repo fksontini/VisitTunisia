@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_bg"
     android:id="@+id/rlSplash"
-    tools:context="com.nader.helloworld4gl.MainActivity">
+    tools:context="com.nader.helloworld4gl.Activity.MainActivity">
 
 
 

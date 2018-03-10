@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.nader.helloworld4gl.TouzerActivity" android:layout_weight="10" android:orientation="vertical">
+    tools:context="com.nader.helloworld4gl.Activity.TouzerActivity" android:layout_weight="10" android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,19 +17,27 @@
             android:layout_width="0dp"
             android:layout_height="match_parent" android:layout_weight="1"
             android:background="@drawable/hotel"
-            android:layout_margin="30dp"></ImageView>
+            android:layout_margin="30dp"
+            android:id="@+id/imgHotel"></ImageView>
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent" android:layout_weight="1"
             android:background="@drawable/monument"
-            android:layout_margin="30dp"></ImageView>
+            android:layout_margin="30dp"
+            android:id="@+id/imgMonument"></ImageView>
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent" android:layout_weight="1"
             android:background="@drawable/restaurant"
-            android:layout_margin="30dp"></ImageView>
+            android:layout_margin="30dp"
+            android:id="@+id/imgRestaurant"></ImageView>
     </LinearLayout>
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp" android:layout_weight="8"></RelativeLayout>
+        android:layout_height="0dp" android:layout_weight="8">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/txtView"/>
+    </FrameLayout>
 </LinearLayout>
