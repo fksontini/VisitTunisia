@@ -37,6 +37,8 @@ TextView txtView;
     @Override
     protected void onResume() {
         super.onResume();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment,new HotelFragment()).commit();
+        imgHotel.setBackground(getResources().getDrawable(R.drawable.hotel_selected));
         imgHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,7 +46,7 @@ TextView txtView;
                 imgRestaurant.setBackground(getResources().getDrawable(R.drawable.restaurant));
                 imgMonument.setBackground(getResources().getDrawable(R.drawable.monument));
                 //txtView.setText("Hotel");
-                getSupportFragmentManager().beginTransaction().add(R.id.fragment,new HotelFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new HotelFragment()).commit();
 
             }
         });

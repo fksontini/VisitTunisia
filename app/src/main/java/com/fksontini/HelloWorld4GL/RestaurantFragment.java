@@ -9,10 +9,6 @@ import android.view.ViewGroup;
 
 import com.fksontini.HelloWorld4GL.R;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class RestaurantFragment extends Fragment {
 
 
