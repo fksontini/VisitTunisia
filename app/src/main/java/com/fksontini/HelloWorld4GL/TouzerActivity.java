@@ -19,7 +19,7 @@ import static com.fksontini.HelloWorld4GL.R.drawable.hotel_selected;
 
 public class TouzerActivity extends AppCompatActivity {
 
-android.support.v4.app.Fragment fragment;
+
 ImageView imgHotel,imgRestaurant,imgMonument;
 TextView txtView;
 
@@ -31,7 +31,7 @@ TextView txtView;
          imgRestaurant = findViewById(R.id.imgRestaurant);
          imgMonument = findViewById(R.id.imgMonument);
          txtView=findViewById(R.id.txtView);
-
+      //  container=(FrameLayout)findViewById(R.id.container);
     }
 
     @Override
@@ -43,17 +43,9 @@ TextView txtView;
                 imgHotel.setBackground(getResources().getDrawable(R.drawable.hotel_selected));
                 imgRestaurant.setBackground(getResources().getDrawable(R.drawable.restaurant));
                 imgMonument.setBackground(getResources().getDrawable(R.drawable.monument));
-txtView.setText("Hotel");
+                //txtView.setText("Hotel");
+                getSupportFragmentManager().beginTransaction().add(R.id.fragment,new HotelFragment()).commit();
 
-                FragmentManager fm = getSupportFragmentManager();
-
-                fragment = fm.findFragmentByTag("hotel");
-                if (fragment == null) {
-                    FragmentTransaction ft = fm.beginTransaction();
-                    fragment =new Fragment();
-                    ft.add(android.R.id.content,fragment,"hotel");
-                    ft.commit();
-                }
             }
         });
         imgMonument.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +54,8 @@ txtView.setText("Hotel");
                 imgMonument.setBackground(getResources().getDrawable(R.drawable.monument_selected));
                 imgHotel.setBackground(getResources().getDrawable(R.drawable.hotel));
                 imgRestaurant.setBackground(getResources().getDrawable(R.drawable.restaurant));
-                txtView.setText("Monument");
+               // txtView.setText("Monument");
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new MonumentFragment()).commit();
             }
         });
         imgRestaurant.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +64,9 @@ txtView.setText("Hotel");
                 imgRestaurant.setBackground(getResources().getDrawable(R.drawable.restaurant_selected));
                 imgMonument.setBackground(getResources().getDrawable(R.drawable.monument));
                 imgHotel.setBackground(getResources().getDrawable(R.drawable.hotel));
-                txtView.setText("Restaurant");
+              //  txtView.setText("Restaurant");
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new RestaurantFragment()).commit();
+
             }
         });
     }
